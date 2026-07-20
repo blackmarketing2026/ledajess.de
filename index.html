@@ -105,6 +105,10 @@
           <span class="eyebrow">Leadership Training für Unternehmen</span>
           <h1>Führungskräfte-Training, das Wirkung im Alltag erzeugt.</h1>
           <p>Ledajess macht aus Ihrem Trainingsbedarf eine klare Anfrage für passende Leadership-, Management- und Führungskräfteentwicklungsformate.</p>
+          <div class="hero-actions">
+            <a class="btn btn-secondary" href="#training">Trainingsfelder ansehen</a>
+            <a class="btn btn-outline hero-outline" href="#ablauf">Ablauf verstehen</a>
+          </div>
           <ul class="trust-list" aria-label="Vorteile">
             <li>
               <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>
@@ -116,46 +120,6 @@
             </li>
           </ul>
         </div>
-
-        <form class="request-card hero-form reveal" aria-label="Führungskräfte-Training anfragen" novalidate>
-          <div class="form-head">
-            <span>Anfrage</span>
-            <h2>Training passend zum Bedarf finden</h2>
-          </div>
-          <div class="form-row">
-            <label>
-              <span>Unternehmen</span>
-              <input type="text" name="organization" autocomplete="organization" required>
-            </label>
-            <label>
-              <span>PLZ oder Ort</span>
-              <input type="text" name="location" autocomplete="postal-code" required>
-            </label>
-          </div>
-          <label>
-            <span>Führungsthema</span>
-            <select name="training-topic" required>
-              <option value="">Bitte auswählen</option>
-              <option>Leadership & Management</option>
-              <option>Kommunikation & Feedback</option>
-              <option>Konfliktmanagement</option>
-              <option>Change Leadership</option>
-              <option>Mitarbeiterführung</option>
-              <option>Individuelles Führungskräfte-Training</option>
-            </select>
-          </label>
-          <button class="btn btn-primary" type="submit">Trainingsanfrage vorbereiten</button>
-          <p class="form-message" aria-live="polite"></p>
-        </form>
-      </div>
-    </section>
-
-    <section class="media-section" aria-label="Führungskräfte-Training in professionellem Umfeld">
-      <div class="section-inner">
-        <picture class="hero-image reveal">
-          <source srcset="medien/leadership-training-hero.webp" type="image/webp">
-          <img src="medien/leadership-training-hero.png" width="1440" height="720" alt="Führungskräfte in einem modernen Leadership-Training" fetchpriority="high">
-        </picture>
       </div>
     </section>
 
@@ -263,7 +227,7 @@
               <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
             </span>
             <h3>Direkter Einstieg</h3>
-            <p>Keine Registrierung, keine Umwege, kein unnötiger Kontaktkanal neben dem Formular.</p>
+            <p>Keine Registrierung, keine Umwege, keine ablenkenden Kontaktkanäle.</p>
           </article>
         </div>
       </div>
@@ -288,56 +252,13 @@
     </section>
 
     <section id="anfrage" class="cta-section" aria-labelledby="anfrage-title">
-      <div class="section-inner cta-grid">
+      <div class="section-inner cta-panel reveal">
         <div class="cta-copy reveal">
-          <span class="eyebrow">Kostenlose Anfrage</span>
-          <h2 id="anfrage-title">Führungskräfte-Training anfragen.</h2>
-          <p>Beschreiben Sie kurz, welches Führungsthema Ihr Unternehmen bewegen soll. Das Formular ist der einzige und zentrale Kontaktweg.</p>
+          <span class="eyebrow">Nächster Schritt</span>
+          <h2 id="anfrage-title">Führungskräfte-Training gezielt planen.</h2>
+          <p>Nutzen Sie die Trainingsfelder, den Ablauf und die Formate als klare Grundlage für Ihre interne Vorbereitung.</p>
+          <a class="btn btn-secondary" href="#training">Trainingsfelder prüfen</a>
         </div>
-        <form class="request-card reveal" aria-label="Kostenlose Anfrage für Führungskräfte-Training" novalidate>
-          <div class="form-row">
-            <label>
-              <span>Name</span>
-              <input type="text" name="name" autocomplete="name" required>
-            </label>
-            <label>
-              <span>Unternehmen</span>
-              <input type="text" name="organization" autocomplete="organization" required>
-            </label>
-          </div>
-          <div class="form-row">
-            <label>
-              <span>E-Mail</span>
-              <input type="email" name="email" autocomplete="email" required>
-            </label>
-            <label>
-              <span>PLZ oder Ort</span>
-              <input type="text" name="location" autocomplete="postal-code" required>
-            </label>
-          </div>
-          <label>
-            <span>Gesuchtes Training</span>
-            <select name="training-topic" required>
-              <option value="">Bitte auswählen</option>
-              <option>Leadership & Management</option>
-              <option>Kommunikation & Feedback</option>
-              <option>Change Management</option>
-              <option>Konfliktmanagement</option>
-              <option>Mitarbeiterführung</option>
-              <option>Individuelles Führungskräfte-Training</option>
-            </select>
-          </label>
-          <label>
-            <span>Nachricht</span>
-            <textarea name="message" rows="5" placeholder="Zielgruppe, Umfang, gewünschtes Format und Zeitraum"></textarea>
-          </label>
-          <label class="checkbox-label">
-            <input type="checkbox" name="privacy" required>
-            <span>Ich habe die <a href="datenschutz.html">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Angaben zur Bearbeitung der Anfrage zu.</span>
-          </label>
-          <button class="btn btn-primary" type="submit">Kostenlose Anfrage senden</button>
-          <p class="form-message" aria-live="polite"></p>
-        </form>
       </div>
     </section>
 
@@ -377,8 +298,6 @@
     </section>
   </main>
 
-  <a class="mobile-sticky-cta" href="#anfrage">Training anfragen</a>
-
   <footer class="site-footer">
     <div class="footer-inner">
       <a href="index.html" class="logo-box footer-logo" aria-label="Ledajess Startseite">
@@ -388,7 +307,7 @@
         <a href="impressum.html">Impressum</a>
         <a href="datenschutz.html">Datenschutz</a>
         <a href="agb.html">AGB</a>
-        <a href="#anfrage">Kontaktformular</a>
+        <a href="#anfrage">Anfrage</a>
       </nav>
     </div>
   </footer>

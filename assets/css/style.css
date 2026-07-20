@@ -255,14 +255,34 @@ svg {
 .hero,
 .section-white,
 .section-soft,
-.cta-section,
-.media-section {
+.cta-section {
   padding: 70px 0;
 }
 
 .hero {
+  position: relative;
   overflow: hidden;
-  background: linear-gradient(180deg, #FFFFFF 0%, #F7F8FA 100%);
+  min-height: calc(100svh - 74px);
+  display: flex;
+  align-items: center;
+  background:
+    linear-gradient(90deg, rgba(22, 36, 60, 0.94) 0%, rgba(22, 36, 60, 0.78) 43%, rgba(22, 36, 60, 0.28) 100%),
+    linear-gradient(180deg, rgba(22, 36, 60, 0.28), rgba(22, 36, 60, 0.7)),
+    url("../../medien/leadership-training-hero.webp") center / cover no-repeat;
+  color: #fff;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(200, 155, 60, 0.58), transparent);
+}
+
+.hero > * {
+  position: relative;
+  z-index: 1;
 }
 
 .section-white {
@@ -275,11 +295,6 @@ svg {
 
 .cta-section {
   background: var(--color-primary);
-}
-
-.media-section {
-  padding-top: 0;
-  background: var(--color-section);
 }
 
 .hero-grid,
@@ -328,6 +343,10 @@ h3 {
   line-height: 1.15;
 }
 
+.hero h1 {
+  color: #fff;
+}
+
 h1 {
   max-width: 760px;
   margin-bottom: 24px;
@@ -355,6 +374,21 @@ p {
 .section-heading p,
 .cta-copy p {
   max-width: 680px;
+  margin-bottom: 32px;
+}
+
+.hero-content {
+  max-width: 760px;
+}
+
+.hero-content p {
+  color: rgba(255, 255, 255, 0.84);
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
   margin-bottom: 32px;
 }
 
@@ -388,7 +422,7 @@ p {
   display: flex;
   gap: 10px;
   align-items: flex-start;
-  color: var(--color-text);
+  color: rgba(255, 255, 255, 0.86);
   font-size: 14px;
   font-weight: 700;
 }
@@ -445,17 +479,15 @@ p {
   color: #fff;
 }
 
-.hero-image {
-  display: block;
-  border-radius: var(--radius-card);
-  overflow: hidden;
-  box-shadow: var(--shadow-card);
+.hero-outline {
+  border-color: rgba(255, 255, 255, 0.62);
+  color: #fff;
 }
 
-.hero-image img {
-  width: 100%;
-  aspect-ratio: 2 / 1;
-  object-fit: cover;
+.hero-outline:hover {
+  border-color: var(--color-accent);
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
 }
 
 .section-heading {
@@ -575,8 +607,8 @@ details p {
   padding: 32px;
 }
 
-.hero-form {
-  align-self: start;
+.cta-panel {
+  max-width: 860px;
 }
 
 .form-head span {
@@ -761,24 +793,6 @@ details p {
   margin-top: 16px;
 }
 
-.mobile-sticky-cta {
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  left: 20px;
-  z-index: 35;
-  display: inline-flex;
-  min-height: 52px;
-  align-items: center;
-  justify-content: center;
-  border-radius: var(--radius-button);
-  background: var(--color-primary);
-  color: #fff;
-  box-shadow: var(--shadow-button);
-  font-weight: 800;
-  text-decoration: none;
-}
-
 #cookie-banner {
   position: fixed;
   inset: auto 0 0;
@@ -878,13 +892,8 @@ details p {
   .hero,
   .section-white,
   .section-soft,
-  .cta-section,
-  .media-section {
+  .cta-section {
     padding: 90px 0;
-  }
-
-  .media-section {
-    padding-top: 0;
   }
 
   h1 {
@@ -917,9 +926,6 @@ details p {
     justify-content: flex-end;
   }
 
-  .mobile-sticky-cta {
-    display: none;
-  }
 }
 
 @media (min-width: 1024px) {
@@ -969,13 +975,8 @@ details p {
   .hero,
   .section-white,
   .section-soft,
-  .cta-section,
-  .media-section {
+  .cta-section {
     padding: 120px 0;
-  }
-
-  .media-section {
-    padding-top: 0;
   }
 
   h1 {
@@ -990,7 +991,6 @@ details p {
     font-size: 28px;
   }
 
-  .hero-grid,
   .split-section,
   .format-layout,
   .cta-grid,
