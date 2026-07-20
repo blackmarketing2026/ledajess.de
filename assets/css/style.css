@@ -151,13 +151,26 @@ svg {
 .logo-box {
   display: inline-flex;
   align-items: center;
+  gap: 10px;
   flex: 0 0 auto;
   text-decoration: none;
 }
 
 .logo-box img {
-  width: 132px;
-  height: auto;
+  width: 32px;
+  height: 32px;
+}
+
+.logo-text {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+}
+
+.footer-logo .logo-text {
+  color: #fff;
+  font-size: 18px;
 }
 
 .menu-toggle {
@@ -938,7 +951,12 @@ details p {
   }
 
   .logo-box img {
-    width: 150px;
+    width: 36px;
+    height: 36px;
+  }
+
+  .logo-text {
+    font-size: 22px;
   }
 
   .menu-toggle {
