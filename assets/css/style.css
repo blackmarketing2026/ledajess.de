@@ -106,9 +106,8 @@ button {
   display: inline-flex;
   align-items: center;
   flex: 0 0 auto;
-  background: #fff;
-  border-radius: 12px;
-  padding: 0.25rem 0.7rem;
+  border-radius: 0;
+  padding: 0;
   text-decoration: none;
 }
 
