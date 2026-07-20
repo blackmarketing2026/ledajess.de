@@ -4,50 +4,64 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Impressum | Ledajess</title>
-  <meta name="description" content="Impressum von Ledajess.de">
+  <meta name="description" content="Impressum von Ledajess.">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-
-  <header>
-    <a href="index.html" class="logo-box">
-      <img src="medien/ledajess logo.png" alt="Ledajess Logo">
+  <header class="site-header" aria-label="Hauptnavigation">
+    <a href="index.html" class="logo-box" aria-label="Ledajess Startseite">
+      <img src="medien/ledajess logo.png" width="176" height="58" alt="Ledajess Logo">
     </a>
-    <nav>
+    <nav class="main-nav" aria-label="Seitenbereiche">
       <a href="index.html">Start</a>
-      <a href="impressum.html">Impressum</a>
       <a href="datenschutz.html">Datenschutz</a>
+      <a href="agb.html">AGB</a>
     </nav>
+    <a class="header-cta" href="index.html#anfrage">Anfrage starten</a>
   </header>
 
-  <main class="card">
-    <h1>Impressum</h1>
+  <main class="legal-page">
+    <section class="section-white">
+      <div class="section-inner">
+        <article class="legal-card">
+          <span class="eyebrow dark">Rechtliches</span>
+          <h1>Impressum</h1>
 
-    <h2>Angaben gemäß § 5 TMG</h2>
-    <p>
-      [Name]<br>
-      [Straße und Hausnummer]<br>
-      [PLZ und Ort]
-    </p>
+          <h2>Angaben gemäß § 5 TMG</h2>
+          <p>
+            [Name]<br>
+            [Straße und Hausnummer]<br>
+            [PLZ und Ort]
+          </p>
 
-    <h2>Kontakt</h2>
-    <p>
-      Telefon: [Telefonnummer]<br>
-      E-Mail: [E-Mail-Adresse]
-    </p>
+          <h2>Kontakt</h2>
+          <p>Bitte nutzen Sie für Anfragen ausschließlich das Kontaktformular.</p>
+          <a class="btn btn-primary" href="index.html#anfrage">Kontaktformular öffnen</a>
 
-    <h2>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h2>
-    <p>
-      [Name]<br>
-      [Anschrift]
-    </p>
+          <h2>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h2>
+          <p>
+            [Name]<br>
+            [Anschrift]
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
 
-  <footer>
-    <a href="impressum.html">Impressum</a>
-    <a href="datenschutz.html">Datenschutz</a>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <a href="index.html" class="logo-box footer-logo" aria-label="Ledajess Startseite">
+        <img src="medien/ledajess logo.png" width="140" height="46" loading="lazy" alt="Ledajess Logo">
+      </a>
+      <nav aria-label="Footer">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="agb.html">AGB</a>
+        <a href="index.html#anfrage">Kontaktformular</a>
+      </nav>
+    </div>
   </footer>
 
-  <script src="assets/js/cookie-banner.js"></script>
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/cookie-banner.js" defer></script>
 </body>
 </html>

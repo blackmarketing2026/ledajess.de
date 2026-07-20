@@ -3,36 +3,436 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ledajess</title>
-  <meta name="description" content="Ledajess.de – Startseite">
+  <title>Ledajess | Coaches, Trainer und Seminare in deiner Region finden</title>
+  <meta name="description" content="Ledajess vermittelt regionale Coaches, Trainer, Speaker, Berater und Seminare. Kostenlos anfragen und passende Experten in deiner Nähe finden.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://ledajess.de/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:title" content="Ledajess | Passende Coaches und Trainer finden">
+  <meta property="og:description" content="Unabhängige Plattform für regionale Coaches, Trainer, Speaker, Berater und Seminare. Kostenlos und direkt anfragen.">
+  <meta property="og:url" content="https://ledajess.de/">
+  <meta property="og:image" content="https://ledajess.de/medien/ledajess%20logo.png">
+  <meta name="theme-color" content="#09182B">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preload" href="medien/ledajess logo.png" as="image">
   <link rel="stylesheet" href="assets/css/style.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Ledajess",
+      "url": "https://ledajess.de/",
+      "logo": "https://ledajess.de/medien/ledajess%20logo.png",
+      "description": "Unabhängige Plattform für regionale Coaches, Trainer, Speaker, Berater und Seminare.",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Deutschland"
+      },
+      "sameAs": []
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Was ist Ledajess?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ledajess ist eine unabhängige Plattform, über die Unternehmen und Privatpersonen regionale Coaches, Trainer, Speaker, Berater und Seminare finden und direkt anfragen können."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Ist die Anfrage kostenlos?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja, die Anfrage über Ledajess ist kostenlos und unverbindlich."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Welche Themen kann ich anfragen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Häufige Themen sind Leadership, Vertrieb, Kommunikation, Rhetorik, Resilienz, Stressmanagement, Change Management, Business Coaching, Teamtraining und Seminare."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Findet Ledajess Experten in meiner Region?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ledajess fokussiert sich auf regionale Experten und berücksichtigt bei der Anfrage die angegebene Postleitzahl oder den Ort."
+          }
+        }
+      ]
+    }
+  </script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Zum Inhalt springen</a>
 
-  <header>
-    <a href="index.html" class="logo-box">
-      <img src="medien/ledajess logo.png" alt="Ledajess Logo">
+  <header class="site-header" aria-label="Hauptnavigation">
+    <a href="index.html" class="logo-box" aria-label="Ledajess Startseite">
+      <img src="medien/ledajess logo.png" width="176" height="58" alt="Ledajess Logo">
     </a>
-    <nav>
-      <a href="index.html">Start</a>
-      <a href="impressum.html">Impressum</a>
-      <a href="datenschutz.html">Datenschutz</a>
+    <nav class="main-nav" aria-label="Seitenbereiche">
+      <a href="#ablauf">Ablauf</a>
+      <a href="#kategorien">Kategorien</a>
+      <a href="#regionen">Regionen</a>
+      <a href="#faq">FAQ</a>
     </nav>
+    <a class="header-cta" href="#anfrage">Anfrage starten</a>
   </header>
 
-  <main>
-    <div class="card">
-      <h1>Ledajess</h1>
-      <p>Diese Seite befindet sich im Aufbau.</p>
-    </div>
+  <main id="main">
+    <section class="hero section-dark">
+      <div class="section-inner hero-grid">
+        <div class="hero-content reveal">
+          <span class="eyebrow">Unabhängige Expertenplattform</span>
+          <h1>Finde den passenden Coach oder Trainer in deiner Region.</h1>
+          <p class="hero-copy">Egal ob Führungskräfteentwicklung, Vertrieb, Kommunikation, Persönlichkeitsentwicklung oder Teamtraining: finde qualifizierte Coaches, Trainer und Seminare in deiner Nähe.</p>
+          <div class="hero-actions" aria-label="Direkte Aktionen">
+            <a class="btn btn-primary" href="#anfrage">Kostenlose Anfrage senden</a>
+            <a class="btn btn-secondary" href="#ablauf">So funktioniert es</a>
+          </div>
+          <ul class="trust-points" aria-label="Vertrauenspunkte">
+            <li><span aria-hidden="true">◎</span>Regional</li>
+            <li><span aria-hidden="true">◇</span>Unabhängig</li>
+            <li><span aria-hidden="true">✓</span>Kostenlose Anfrage</li>
+          </ul>
+        </div>
+
+        <form class="request-card hero-form reveal" aria-label="Expertenanfrage im Hero">
+          <div>
+            <span class="form-label">Schnellanfrage</span>
+            <h2>Passende Experten finden</h2>
+          </div>
+          <label>
+            <span>PLZ oder Ort</span>
+            <input type="text" name="location" autocomplete="postal-code" placeholder="z. B. 80331 München" required>
+          </label>
+          <label>
+            <span>Was suchen Sie?</span>
+            <select name="topic" required>
+              <option value="">Thema auswählen</option>
+              <option>Leadership</option>
+              <option>Business Coaching</option>
+              <option>Vertriebstraining</option>
+              <option>Kommunikation</option>
+              <option>Teamtraining</option>
+              <option>Seminar oder Workshop</option>
+            </select>
+          </label>
+          <button class="btn btn-primary" type="submit">Passenden Experten finden</button>
+          <p class="form-note">Unverbindlich, kostenlos und ohne direkte Kontaktdaten-Veröffentlichung.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="trust-section" aria-labelledby="vertrauen-title">
+      <div class="section-inner">
+        <div class="section-heading reveal">
+          <span class="eyebrow dark">Vertrauen</span>
+          <h2 id="vertrauen-title">Orientierung für anspruchsvolle Anfragen.</h2>
+          <p>Ledajess bündelt regionale Expertise und macht den ersten Schritt zur passenden Begleitung einfach, klar und zeitsparend.</p>
+        </div>
+        <div class="logo-strip reveal" aria-label="Beispielhafte Vertrauenssignale">
+          <span>Executive Coaching</span>
+          <span>Seminare</span>
+          <span>Training</span>
+          <span>Beratung</span>
+        </div>
+        <div class="stats-grid">
+          <div class="stat-card reveal"><strong>350+</strong><span>Coaches</span></div>
+          <div class="stat-card reveal"><strong>220+</strong><span>Trainer</span></div>
+          <div class="stat-card reveal"><strong>80+</strong><span>Regionen</span></div>
+          <div class="stat-card reveal"><strong>1.900+</strong><span>vermittelte Anfragen</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="ablauf" class="section-light" aria-labelledby="ablauf-title">
+      <div class="section-inner">
+        <div class="section-heading reveal">
+          <span class="eyebrow dark">Ablauf</span>
+          <h2 id="ablauf-title">So funktioniert Ledajess.</h2>
+          <p>Eine Anfrage reicht aus, um passende regionale Experten für dein Thema zu finden.</p>
+        </div>
+        <div class="steps-grid">
+          <article class="feature-card reveal">
+            <span class="icon-badge" aria-hidden="true">01</span>
+            <h3>Anfrage senden</h3>
+            <p>Beschreibe Ort, Thema und Ziel. Das Formular führt dich ohne Umwege zur richtigen Anfrage.</p>
+          </article>
+          <article class="feature-card reveal">
+            <span class="icon-badge" aria-hidden="true">02</span>
+            <h3>Passende Experten erhalten</h3>
+            <p>Ledajess ordnet deine Anfrage regional und thematisch passenden Coaches, Trainern oder Seminaren zu.</p>
+          </article>
+          <article class="feature-card reveal">
+            <span class="icon-badge" aria-hidden="true">03</span>
+            <h3>Direkt Kontakt aufnehmen</h3>
+            <p>Du entscheidest, welche Profile und Angebote zu deinem Bedarf passen.</p>
+          </article>
+        </div>
+        <div class="section-cta reveal">
+          <a class="btn btn-primary" href="#anfrage">Jetzt Anfrage starten</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="kategorien" class="section-white" aria-labelledby="kategorien-title">
+      <div class="section-inner">
+        <div class="section-heading reveal">
+          <span class="eyebrow dark">Kategorien</span>
+          <h2 id="kategorien-title">Finde Expertise für die Themen, die wirklich zählen.</h2>
+        </div>
+        <div class="category-grid">
+          <a href="#anfrage" class="category-card reveal"><span>Leadership</span></a>
+          <a href="#anfrage" class="category-card reveal"><span>Business Coaching</span></a>
+          <a href="#anfrage" class="category-card reveal"><span>Vertrieb</span></a>
+          <a href="#anfrage" class="category-card reveal"><span>Kommunikation</span></a>
+          <a href="#anfrage" class="category-card reveal"><span>Teamtraining</span></a>
+          <a href="#anfrage" class="category-card reveal"><span>Workshops</span></a>
+          <a href="#anfrage" class="category-card reveal"><span>Seminare</span></a>
+          <a href="#anfrage" class="category-card reveal"><span>Speaker</span></a>
+          <a href="#anfrage" class="category-card reveal"><span>Persönlichkeitsentwicklung</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="regionen" class="section-light" aria-labelledby="regionen-title">
+      <div class="section-inner regions-layout">
+        <div class="section-heading reveal">
+          <span class="eyebrow dark">Regionen</span>
+          <h2 id="regionen-title">Regionale Coaches und Trainer in beliebten Städten.</h2>
+          <p>Starte mit deinem Standort und finde Experten, die vor Ort, hybrid oder online begleiten.</p>
+          <a class="btn btn-primary" href="#anfrage">Region anfragen</a>
+        </div>
+        <div class="city-grid reveal" aria-label="Beliebte Städte">
+          <a href="#anfrage">Berlin</a>
+          <a href="#anfrage">Hamburg</a>
+          <a href="#anfrage">München</a>
+          <a href="#anfrage">Köln</a>
+          <a href="#anfrage">Frankfurt</a>
+          <a href="#anfrage">Stuttgart</a>
+          <a href="#anfrage">Düsseldorf</a>
+          <a href="#anfrage">Leipzig</a>
+          <a href="#anfrage">Dortmund</a>
+          <a href="#anfrage">Hannover</a>
+          <a href="#anfrage">Nürnberg</a>
+          <a href="#anfrage">Bremen</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-dark" aria-labelledby="warum-title">
+      <div class="section-inner">
+        <div class="section-heading light reveal">
+          <span class="eyebrow">Warum Ledajess</span>
+          <h2 id="warum-title">Eine Plattform, die Qualität und Einfachheit verbindet.</h2>
+        </div>
+        <div class="benefit-grid">
+          <article class="dark-card reveal"><span class="gold-icon" aria-hidden="true">◇</span><h3>Unabhängig</h3><p>Keine starre Anbieterbindung. Deine Anfrage steht im Mittelpunkt.</p></article>
+          <article class="dark-card reveal"><span class="gold-icon" aria-hidden="true">◎</span><h3>Regionale Experten</h3><p>Passende Profile aus deiner Nähe für Workshops, Seminare und Coachings.</p></article>
+          <article class="dark-card reveal"><span class="gold-icon" aria-hidden="true">✓</span><h3>Geprüfte Profile</h3><p>Klare Themenfelder, seriöse Darstellung und nachvollziehbare Schwerpunkte.</p></article>
+          <article class="dark-card reveal"><span class="gold-icon" aria-hidden="true">↗</span><h3>Schnelle Vermittlung</h3><p>Weniger Recherche, schneller zu relevanten Optionen und konkreten nächsten Schritten.</p></article>
+        </div>
+        <div class="section-cta reveal">
+          <a class="btn btn-primary" href="#anfrage">Passende Experten finden</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-white" aria-labelledby="zielgruppen-title">
+      <div class="section-inner">
+        <div class="section-heading reveal">
+          <span class="eyebrow dark">Für wen</span>
+          <h2 id="zielgruppen-title">Für Unternehmen und Privatpersonen.</h2>
+        </div>
+        <div class="audience-grid">
+          <article class="audience-card reveal">
+            <h3>Unternehmen</h3>
+            <p>Für Führungskräfteentwicklung, Vertriebstrainings, Kommunikation, Change-Prozesse, Teamformate und externe Speaker.</p>
+            <a href="#anfrage">Unternehmensanfrage starten</a>
+          </article>
+          <article class="audience-card reveal">
+            <h3>Privatpersonen</h3>
+            <p>Für persönliche Entwicklung, berufliche Orientierung, Rhetorik, Resilienz, Zeitmanagement und individuelles Coaching.</p>
+            <a href="#anfrage">Private Anfrage starten</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-light" aria-labelledby="themen-title">
+      <div class="section-inner">
+        <div class="section-heading reveal">
+          <span class="eyebrow dark">Beliebte Themen</span>
+          <h2 id="themen-title">Häufig angefragte Coachings, Trainings und Seminare.</h2>
+        </div>
+        <div class="topic-cloud reveal">
+          <a href="#anfrage">Leadership</a>
+          <a href="#anfrage">Vertrieb</a>
+          <a href="#anfrage">Rhetorik</a>
+          <a href="#anfrage">Zeitmanagement</a>
+          <a href="#anfrage">Resilienz</a>
+          <a href="#anfrage">Stressmanagement</a>
+          <a href="#anfrage">Kommunikation</a>
+          <a href="#anfrage">Verhandlung</a>
+          <a href="#anfrage">Change Management</a>
+          <a href="#anfrage">Mitarbeiterführung</a>
+        </div>
+        <div class="section-cta reveal">
+          <a class="btn btn-primary" href="#anfrage">Thema anfragen</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-white" aria-labelledby="bewertungen-title">
+      <div class="section-inner">
+        <div class="section-heading reveal">
+          <span class="eyebrow dark">Bewertungen</span>
+          <h2 id="bewertungen-title">Entscheider schätzen die klare Vorauswahl.</h2>
+        </div>
+        <div class="testimonial-grid">
+          <figure class="testimonial-card reveal">
+            <blockquote>„Die Anfrage war schnell formuliert und die vorgeschlagenen Profile waren fachlich deutlich näher an unserem Bedarf als eine freie Suche.“</blockquote>
+            <figcaption>HR-Leitung, Mittelstand</figcaption>
+          </figure>
+          <figure class="testimonial-card reveal">
+            <blockquote>„Für unser Führungskräftetraining haben wir regionale Optionen erhalten, die wir direkt vergleichen konnten.“</blockquote>
+            <figcaption>Geschäftsführung, Beratung</figcaption>
+          </figure>
+          <figure class="testimonial-card reveal">
+            <blockquote>„Sehr angenehm: kein langer Rechercheprozess, sondern ein strukturierter Einstieg mit passenden Themenfeldern.“</blockquote>
+            <figcaption>Privatkundin, Coaching</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="anfrage" class="cta-section section-dark" aria-labelledby="anfrage-title">
+      <div class="section-inner cta-grid">
+        <div class="cta-copy reveal">
+          <span class="eyebrow">Kostenlose Anfrage</span>
+          <h2 id="anfrage-title">Jetzt den passenden Coach finden.</h2>
+          <p>Beschreibe kurz, worum es geht. Ledajess macht deine Anfrage klar, regional und anschlussfähig für passende Experten.</p>
+        </div>
+        <form class="request-card large-form reveal" aria-label="Kostenlose Anfrage senden">
+          <div class="form-row">
+            <label>
+              <span>Name</span>
+              <input type="text" name="name" autocomplete="name" required>
+            </label>
+            <label>
+              <span>E-Mail</span>
+              <input type="email" name="email" autocomplete="email" required>
+            </label>
+          </div>
+          <div class="form-row">
+            <label>
+              <span>PLZ</span>
+              <input type="text" name="postal-code" autocomplete="postal-code" required>
+            </label>
+            <label>
+              <span>Was suchen Sie?</span>
+              <select name="request-topic" required>
+                <option value="">Bitte auswählen</option>
+                <option>Coach</option>
+                <option>Trainer</option>
+                <option>Speaker</option>
+                <option>Berater</option>
+                <option>Seminar</option>
+              </select>
+            </label>
+          </div>
+          <label>
+            <span>Nachricht</span>
+            <textarea name="message" rows="5" placeholder="Beschreiben Sie Thema, Zielgruppe und gewünschten Zeitraum."></textarea>
+          </label>
+          <label class="checkbox-label">
+            <input type="checkbox" name="privacy" required>
+            <span>Ich habe die <a href="datenschutz.html">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Angaben zur Bearbeitung der Anfrage zu.</span>
+          </label>
+          <button class="btn btn-primary" type="submit">Kostenlose Anfrage senden</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="faq" class="section-white" aria-labelledby="faq-title">
+      <div class="section-inner faq-layout">
+        <div class="section-heading reveal">
+          <span class="eyebrow dark">FAQ</span>
+          <h2 id="faq-title">Häufige Fragen zu Ledajess.</h2>
+          <p>Alles Wichtige zur Anfrage, Auswahl und regionalen Vermittlung.</p>
+        </div>
+        <div class="faq-list reveal">
+          <details>
+            <summary>Was ist Ledajess?</summary>
+            <p>Ledajess ist eine unabhängige Plattform, auf der Unternehmen und Privatpersonen regionale Coaches, Trainer, Speaker, Berater und Seminare finden und direkt anfragen können.</p>
+          </details>
+          <details>
+            <summary>Ist die Anfrage kostenlos?</summary>
+            <p>Ja. Die Anfrage ist kostenlos und unverbindlich.</p>
+          </details>
+          <details>
+            <summary>Welche Experten kann ich finden?</summary>
+            <p>Du kannst Coaches, Trainer, Speaker, Berater sowie passende Seminare und Workshops für berufliche und persönliche Entwicklung anfragen.</p>
+          </details>
+          <details>
+            <summary>Für welche Themen eignet sich Ledajess?</summary>
+            <p>Typische Themen sind Leadership, Vertrieb, Kommunikation, Rhetorik, Resilienz, Stressmanagement, Change Management, Teamtraining und Mitarbeiterführung.</p>
+          </details>
+          <details>
+            <summary>Kann ich Experten in meiner Nähe finden?</summary>
+            <p>Ja. Die Anfrage berücksichtigt PLZ oder Ort, damit regionale Optionen sichtbar werden.</p>
+          </details>
+          <details>
+            <summary>Ist Ledajess für Unternehmen geeignet?</summary>
+            <p>Ja. Unternehmen nutzen Ledajess für Führungskräfteentwicklung, Vertriebstrainings, Seminare, Workshops, Speaker und Teamformate.</p>
+          </details>
+          <details>
+            <summary>Können auch Privatpersonen anfragen?</summary>
+            <p>Ja. Privatpersonen können Coachings und Seminare für persönliche Entwicklung, berufliche Orientierung und Kommunikationsthemen anfragen.</p>
+          </details>
+          <details>
+            <summary>Wie schnell erhalte ich passende Optionen?</summary>
+            <p>Die Anfrage ist so aufgebaut, dass relevante Angaben sofort vorliegen und passende Experten zügig eingeordnet werden können.</p>
+          </details>
+          <details>
+            <summary>Muss ich mich registrieren?</summary>
+            <p>Nein. Für die erste Anfrage ist keine Registrierung erforderlich.</p>
+          </details>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer>
-    <a href="impressum.html">Impressum</a>
-    <a href="datenschutz.html">Datenschutz</a>
+  <a class="mobile-sticky-cta" href="#anfrage">Kostenlose Anfrage senden</a>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <a href="index.html" class="logo-box footer-logo" aria-label="Ledajess Startseite">
+        <img src="medien/ledajess logo.png" width="140" height="46" loading="lazy" alt="Ledajess Logo">
+      </a>
+      <nav aria-label="Footer">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="agb.html">AGB</a>
+        <a href="#anfrage">Kontaktformular</a>
+      </nav>
+    </div>
   </footer>
 
-  <script src="assets/js/cookie-banner.js"></script>
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/cookie-banner.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
 </body>
 </html>

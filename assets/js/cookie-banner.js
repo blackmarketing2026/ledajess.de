@@ -1,5 +1,5 @@
-// Minimalistischer Cookie-Consent-Banner (Grundgerüst, ohne Design)
-// Speichert die Entscheidung in localStorage unter "cookieConsent": "accepted" | "declined"
+// Minimalistischer Cookie-Consent-Banner.
+// Speichert die Entscheidung in localStorage unter "cookieConsent": "accepted" | "declined".
 
 (function () {
   const CONSENT_KEY = "cookieConsent";
