@@ -111,8 +111,8 @@ svg {
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  min-height: 74px;
-  padding: 14px 20px;
+  min-height: 90px;
+  padding: 16px 32px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
   background: rgba(22, 36, 60, 0.96);
   color: #fff;
@@ -151,26 +151,18 @@ svg {
 .logo-box {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
   flex: 0 0 auto;
   text-decoration: none;
 }
 
 .logo-box img {
-  width: 32px;
-  height: 32px;
+  width: 56px;
+  height: 56px;
 }
 
-.logo-text {
-  color: #fff;
-  font-size: 20px;
-  font-weight: 800;
-  letter-spacing: 0.01em;
-}
-
-.footer-logo .logo-text {
-  color: #fff;
-  font-size: 18px;
+.footer-logo img {
+  width: 44px;
+  height: 44px;
 }
 
 .menu-toggle {
@@ -889,7 +881,7 @@ details p {
   }
 
   .site-header {
-    padding-inline: 32px;
+    padding-inline: 40px;
   }
 
   .section-inner,
@@ -947,16 +939,12 @@ details p {
   }
 
   .site-header {
-    padding-inline: 40px;
+    padding-inline: 56px;
   }
 
   .logo-box img {
-    width: 36px;
-    height: 36px;
-  }
-
-  .logo-text {
-    font-size: 22px;
+    width: 64px;
+    height: 64px;
   }
 
   .menu-toggle {
