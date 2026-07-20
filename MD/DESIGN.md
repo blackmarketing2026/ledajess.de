@@ -49,6 +49,7 @@ Verwendung:
 * Buttons
 * Icons
 * Footer
+* Alle Sektionen oder Flächen, in denen das Logo eingebunden ist
 
 ---
 
@@ -108,6 +109,19 @@ Warnung
 Fehler
 
 `#DC2626`
+
+---
+
+# Logo
+
+Das Logo wird immer auf einem dunklen Hintergrund platziert.
+
+Verbindliche Regel:
+
+* Jede Sektion, Fläche oder Komponente, in der das Logo sichtbar eingebunden ist, erhält den dunkelblauen Primärton `#16243C` als Hintergrund oder liegt auf einer gleichwertig dunklen dunkelblauen Fläche.
+* Das Logo darf nicht auf weißem, hellgrauem oder unruhigem Hintergrund stehen.
+* Es darf keine künstliche weiße Box, Kapsel oder Fläche hinter das Logo gelegt werden.
+* Header und Footer verwenden standardmäßig den dunkelblauen Primärton, weil dort das Logo eingebunden ist.
 
 ---
 
@@ -350,6 +364,7 @@ Navigation bleibt schlicht.
 * maximal sechs Menüpunkte
 * deutlicher CTA-Button
 * Sticky Navigation
+* Dunkelblauer Hintergrund, weil das Logo in der Navigation eingebunden ist
 
 Mobil
 
@@ -408,7 +423,7 @@ Erlaubt
 
 Dauer
 
-150–300 ms
+150-300 ms
 
 Keine übertriebenen Animationen.
 
@@ -504,6 +519,8 @@ Nicht verwenden:
 * mehr als drei Button-Designs
 * unterschiedliche Kartendesigns auf einer Seite
 * unterschiedliche Schriftarten innerhalb derselben Seite
+* Logo auf weißem, hellgrauem oder unruhigem Hintergrund
+* künstliche weiße Logo-Boxen
 
 ---
 
@@ -524,6 +541,7 @@ Vor jeder Fertigstellung prüfen:
 * Barrierefreiheit
 * Keine Layoutfehler
 * Keine überflüssigen Elemente
+* Logo immer auf dunkelblauem Hintergrund
 
 Im Zweifel gilt:
 
