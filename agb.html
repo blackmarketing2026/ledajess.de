@@ -12,23 +12,29 @@
     <a href="index.html" class="logo-box" aria-label="Ledajess Startseite">
       <img src="medien/ledajess logo.png" width="176" height="58" alt="Ledajess Logo">
     </a>
-    <nav class="main-nav" aria-label="Seitenbereiche">
+    <button class="menu-toggle" type="button" aria-label="Menü öffnen" aria-controls="main-navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav id="main-navigation" class="main-nav" aria-label="Seitenbereiche">
       <a href="index.html">Start</a>
       <a href="impressum.html">Impressum</a>
       <a href="datenschutz.html">Datenschutz</a>
+      <a class="nav-cta" href="index.html#anfrage">Anfrage starten</a>
     </nav>
   </header>
 
   <main class="legal-page">
     <section class="section-white">
       <div class="section-inner">
-        <div class="legal-card">
-          <span class="eyebrow dark">Rechtliches</span>
+        <article class="legal-card">
+          <span class="eyebrow">Rechtliches</span>
           <h1>Allgemeine Geschäftsbedingungen</h1>
           <p>Diese Seite ist als Platzhalter für die Allgemeinen Geschäftsbedingungen von Ledajess vorbereitet.</p>
           <p>Bitte ergänzen Sie hier die rechtlich geprüften Bedingungen für die Nutzung der Plattform und die Anfragevermittlung.</p>
           <a class="btn btn-primary" href="index.html#anfrage">Zur Anfrage</a>
-        </div>
+        </article>
       </div>
     </section>
   </main>
@@ -48,5 +54,6 @@
   </footer>
 
   <script src="assets/js/cookie-banner.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
 </body>
 </html>

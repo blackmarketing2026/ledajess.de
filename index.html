@@ -3,21 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ledajess | Führungskräfte-Training für Unternehmen anfragen</title>
-  <meta name="description" content="Ledajess hilft Unternehmen, passende Trainer für Führungskräfte-Training, Leadership-Programme und Management-Seminare zu finden. Kostenlos und unverbindlich anfragen.">
+  <title>Ledajess | Führungskräfte-Training für Unternehmen</title>
+  <meta name="description" content="Ledajess unterstützt Unternehmen bei der Anfrage passender Führungskräfte-Trainings für Leadership, Kommunikation, Change und Mitarbeiterführung.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://ledajess.de/">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="de_DE">
   <meta property="og:title" content="Ledajess | Führungskräfte-Training für Unternehmen">
-  <meta property="og:description" content="Passende Trainer für Leadership, Management und Führungskräfteentwicklung anfragen. Für Unternehmen, Teams und Entscheider.">
+  <meta property="og:description" content="Strukturierte Anfrage für Leadership-Trainings, Management-Seminare und Führungskräfteentwicklung.">
   <meta property="og:url" content="https://ledajess.de/">
   <meta property="og:image" content="https://ledajess.de/medien/leadership-training-hero.png">
-  <meta name="theme-color" content="#09182B">
+  <meta name="theme-color" content="#16243C">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="preload" href="medien/leadership-training-hero.png" as="image">
+  <link rel="preload" href="medien/leadership-training-hero.webp" as="image">
   <link rel="stylesheet" href="assets/css/style.css">
   <script type="application/ld+json">
     {
@@ -27,7 +27,7 @@
       "url": "https://ledajess.de/",
       "logo": "https://ledajess.de/medien/ledajess%20logo.png",
       "image": "https://ledajess.de/medien/leadership-training-hero.png",
-      "description": "Ledajess vermittelt Unternehmen passende Trainer und Trainingsformate für Führungskräfteentwicklung, Leadership und Management.",
+      "description": "Ledajess unterstützt Unternehmen bei der Anfrage passender Trainingsformate für Führungskräfteentwicklung, Leadership und Management.",
       "areaServed": {
         "@type": "Country",
         "name": "Deutschland"
@@ -45,15 +45,15 @@
           "name": "Für wen ist Ledajess gedacht?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Ledajess richtet sich an Unternehmen, HR-Verantwortliche und Geschäftsführungen, die Führungskräfte-Training oder Leadership-Programme anfragen möchten."
+            "text": "Ledajess richtet sich an Unternehmen, HR-Verantwortliche, People-&-Culture-Teams und Geschäftsführungen, die Führungskräfte-Training anfragen möchten."
           }
         },
         {
           "@type": "Question",
-          "name": "Welche Trainings können Unternehmen anfragen?",
+          "name": "Welche Führungsthemen können angefragt werden?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Unternehmen können Trainings zu Leadership, Mitarbeiterführung, Kommunikation, Konfliktmanagement, Change Management, Feedbackkultur und Entscheidungsstärke anfragen."
+            "text": "Unternehmen können Trainings zu Leadership, Mitarbeiterführung, Kommunikation, Feedback, Konfliktmanagement, Change Management und Entscheidungsstärke anfragen."
           }
         },
         {
@@ -66,10 +66,10 @@
         },
         {
           "@type": "Question",
-          "name": "Wie funktioniert die Anfrage?",
+          "name": "Welche Angaben werden für die Anfrage benötigt?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Unternehmen beschreiben Bedarf, Standort, Zielgruppe und gewünschtes Format. Ledajess bereitet die Anfrage für passende Trainingsoptionen vor."
+            "text": "Hilfreich sind Angaben zu Unternehmen, Standort, Zielgruppe, Führungsthema, gewünschtem Format und Zeitraum."
           }
         }
       ]
@@ -83,109 +83,113 @@
     <a href="index.html" class="logo-box" aria-label="Ledajess Startseite">
       <img src="medien/ledajess logo.png" width="176" height="58" alt="Ledajess Logo">
     </a>
-    <nav class="main-nav" aria-label="Seitenbereiche">
+    <button class="menu-toggle" type="button" aria-label="Menü öffnen" aria-controls="main-navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav id="main-navigation" class="main-nav" aria-label="Seitenbereiche">
       <a href="#training">Training</a>
       <a href="#ablauf">Ablauf</a>
       <a href="#qualitaet">Qualität</a>
+      <a href="#formate">Formate</a>
       <a href="#faq">FAQ</a>
+      <a class="nav-cta" href="#anfrage">Anfrage starten</a>
     </nav>
-    <a class="header-cta" href="#anfrage">Training anfragen</a>
   </header>
 
   <main id="main">
     <section class="hero">
       <div class="section-inner hero-grid">
-        <div class="hero-copy reveal">
+        <div class="hero-content reveal">
           <span class="eyebrow">Leadership Training für Unternehmen</span>
-          <h1>Führungskräfte-Training, das zu Ihrem Unternehmen passt.</h1>
-          <p>Ledajess unterstützt Unternehmen dabei, passende Trainer für Leadership, Management und Führungskräfteentwicklung zu finden. Klarer Bedarf rein, passende Trainingsoptionen raus.</p>
-          <div class="hero-actions" aria-label="Direkte Aktionen">
-            <a class="btn btn-primary" href="#anfrage">
-              <span>Training anfragen</span>
-              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </a>
-            <a class="btn btn-secondary" href="#ablauf">Ablauf ansehen</a>
-          </div>
-          <ul class="trust-points" aria-label="Vorteile">
+          <h1>Führungskräfte-Training, das Wirkung im Alltag erzeugt.</h1>
+          <p>Ledajess macht aus Ihrem Trainingsbedarf eine klare Anfrage für passende Leadership-, Management- und Führungskräfteentwicklungsformate.</p>
+          <ul class="trust-list" aria-label="Vorteile">
             <li>
               <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>
-              Für Unternehmen
-            </li>
-            <li>
-              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v18M5 8h14M7 16h10"/></svg>
-              Regional und online
+              Für HR, Geschäftsführung und People & Culture
             </li>
             <li>
               <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2 4 6v6c0 5 3.4 8.2 8 10 4.6-1.8 8-5 8-10V6l-8-4Z"/></svg>
-              Kostenlos anfragen
+              Kostenlos und unverbindlich anfragen
             </li>
           </ul>
         </div>
 
-        <div class="hero-visual reveal">
-          <img src="medien/leadership-training-hero.png" width="1792" height="1024" alt="Führungskräfte in einem modernen Leadership-Training" fetchpriority="high">
-          <div class="visual-panel" aria-label="Trainingsfokus">
-            <span>Fokus</span>
-            <strong>Leadership, Kommunikation, Change</strong>
+        <form class="request-card hero-form reveal" aria-label="Führungskräfte-Training anfragen" novalidate>
+          <div class="form-head">
+            <span>Anfrage</span>
+            <h2>Training passend zum Bedarf finden</h2>
           </div>
-        </div>
+          <div class="form-row">
+            <label>
+              <span>Unternehmen</span>
+              <input type="text" name="organization" autocomplete="organization" required>
+            </label>
+            <label>
+              <span>PLZ oder Ort</span>
+              <input type="text" name="location" autocomplete="postal-code" required>
+            </label>
+          </div>
+          <label>
+            <span>Führungsthema</span>
+            <select name="training-topic" required>
+              <option value="">Bitte auswählen</option>
+              <option>Leadership & Management</option>
+              <option>Kommunikation & Feedback</option>
+              <option>Konfliktmanagement</option>
+              <option>Change Leadership</option>
+              <option>Mitarbeiterführung</option>
+              <option>Individuelles Führungskräfte-Training</option>
+            </select>
+          </label>
+          <button class="btn btn-primary" type="submit">Trainingsanfrage vorbereiten</button>
+          <p class="form-message" aria-live="polite"></p>
+        </form>
       </div>
     </section>
 
-    <section class="proof-section" aria-labelledby="proof-title">
-      <div class="section-inner proof-grid">
-        <div class="proof-intro reveal">
-          <span class="eyebrow dark">Für Entscheider</span>
-          <h2 id="proof-title">Ein klarer Weg vom Trainingsbedarf zur passenden Lösung.</h2>
-        </div>
-        <div class="metrics">
-          <div class="metric-card reveal">
-            <strong>1</strong>
-            <span>Anfrage für Ihren Bedarf</span>
-          </div>
-          <div class="metric-card reveal">
-            <strong>3</strong>
-            <span>zentrale Trainingsformate</span>
-          </div>
-          <div class="metric-card reveal">
-            <strong>0€</strong>
-            <span>kostenlose Erst-Anfrage</span>
-          </div>
-        </div>
+    <section class="media-section" aria-label="Führungskräfte-Training in professionellem Umfeld">
+      <div class="section-inner">
+        <picture class="hero-image reveal">
+          <source srcset="medien/leadership-training-hero.webp" type="image/webp">
+          <img src="medien/leadership-training-hero.png" width="1440" height="720" alt="Führungskräfte in einem modernen Leadership-Training" fetchpriority="high">
+        </picture>
       </div>
     </section>
 
     <section id="training" class="section-white" aria-labelledby="training-title">
       <div class="section-inner">
         <div class="section-heading reveal">
-          <span class="eyebrow dark">Trainingsfelder</span>
-          <h2 id="training-title">Führung wirkt dort, wo Verhalten konkret wird.</h2>
-          <p>Ledajess fokussiert auf Trainings, die Führungskräfte im Alltag wirklich brauchen: klare Kommunikation, gute Entscheidungen und starke Teams.</p>
+          <span class="eyebrow">Trainingsfelder</span>
+          <h2 id="training-title">Führung wird stärker, wenn sie konkret trainiert wird.</h2>
+          <p>Der Fokus liegt auf den Situationen, in denen Führungskräfte täglich Wirkung erzeugen: Gespräche, Entscheidungen, Konflikte und Veränderung.</p>
         </div>
-        <div class="training-grid">
-          <article class="training-card reveal">
+        <div class="card-grid card-grid-3">
+          <article class="content-card reveal">
             <span class="icon-box">
               <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 19V5m0 14h16M8 16V9m5 7V6m5 10v-4"/></svg>
             </span>
             <h3>Leadership & Management</h3>
-            <p>Für neue und erfahrene Führungskräfte, die Rolle, Verantwortung und Führungsstil schärfen möchten.</p>
+            <p>Rollenklärung, Führungsstil, Priorisierung und verantwortungsvolle Entscheidungen im Unternehmenskontext.</p>
           </article>
-          <article class="training-card reveal">
+          <article class="content-card reveal">
             <span class="icon-box">
               <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v8Z"/></svg>
             </span>
             <h3>Kommunikation & Feedback</h3>
-            <p>Für Gespräche, Feedbackkultur, Konfliktklärung und souveräne Kommunikation in anspruchsvollen Situationen.</p>
+            <p>Souveräne Gespräche, klares Feedback, schwierige Dialoge und eine belastbare Kommunikationskultur.</p>
           </article>
-          <article class="training-card reveal">
+          <article class="content-card reveal">
             <span class="icon-box">
               <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M3 12h6l3-8 3 16 3-8h3"/></svg>
             </span>
             <h3>Change & Teamführung</h3>
-            <p>Für Führung in Veränderung, Teamdynamik, Entscheidungsstärke und Orientierung in komplexen Phasen.</p>
+            <p>Orientierung geben, Teams stabilisieren und Führung in dynamischen oder angespannten Phasen stärken.</p>
           </article>
         </div>
-        <div class="section-cta reveal">
+        <div class="section-action reveal">
           <a class="btn btn-primary" href="#anfrage">Führungskräfte-Training anfragen</a>
         </div>
       </div>
@@ -193,89 +197,84 @@
 
     <section id="ablauf" class="section-soft" aria-labelledby="ablauf-title">
       <div class="section-inner split-section">
-        <div class="image-card reveal">
-          <img src="medien/leadership-training-hero.png" width="1792" height="1024" loading="lazy" alt="Moderner Besprechungsraum für Führungskräfteentwicklung">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Ablauf</span>
+          <h2 id="ablauf-title">Eine Anfrage, sauber vorbereitet.</h2>
+          <p>Ledajess reduziert den Aufwand am Anfang. Sie beschreiben den Bedarf, die Anfrage wird strukturiert, und die nächsten Schritte werden vergleichbarer.</p>
+          <a class="btn btn-outline" href="#anfrage">Bedarf eintragen</a>
         </div>
-        <div class="split-content reveal">
-          <span class="eyebrow dark">Ablauf</span>
-          <h2 id="ablauf-title">In drei Schritten zur passenden Trainingsanfrage.</h2>
-          <div class="timeline">
-            <article>
-              <span>01</span>
-              <div>
-                <h3>Bedarf beschreiben</h3>
-                <p>Sie nennen Thema, Zielgruppe, Standort, Format und gewünschte Wirkung.</p>
-              </div>
-            </article>
-            <article>
-              <span>02</span>
-              <div>
-                <h3>Anfrage schärfen</h3>
-                <p>Ledajess macht aus Ihrem Bedarf eine klare, vergleichbare Trainingsanfrage.</p>
-              </div>
-            </article>
-            <article>
-              <span>03</span>
-              <div>
-                <h3>Optionen prüfen</h3>
-                <p>Sie erhalten eine strukturierte Grundlage für die Auswahl passender Trainer und Formate.</p>
-              </div>
-            </article>
-          </div>
-          <a class="btn btn-primary" href="#anfrage">Jetzt Bedarf eintragen</a>
+        <div class="process-list reveal">
+          <article class="process-item">
+            <span>01</span>
+            <div>
+              <h3>Bedarf erfassen</h3>
+              <p>Thema, Zielgruppe, Standort, Format und gewünschter Zeitraum werden kompakt abgefragt.</p>
+            </div>
+          </article>
+          <article class="process-item">
+            <span>02</span>
+            <div>
+              <h3>Anfrage strukturieren</h3>
+              <p>Aus den Angaben entsteht eine klare Grundlage für passende Trainingsformate.</p>
+            </div>
+          </article>
+          <article class="process-item">
+            <span>03</span>
+            <div>
+              <h3>Nächsten Schritt wählen</h3>
+              <p>Sie behalten die Kontrolle und entscheiden, wie die Anfrage weitergeführt wird.</p>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <section id="qualitaet" class="section-dark" aria-labelledby="qualitaet-title">
+    <section id="qualitaet" class="section-white" aria-labelledby="qualitaet-title">
       <div class="section-inner">
-        <div class="section-heading light reveal">
+        <div class="section-heading reveal">
           <span class="eyebrow">Qualität</span>
-          <h2 id="qualitaet-title">Für Führungskräfteentwicklung mit Anspruch.</h2>
-          <p>Die Seite ist bewusst fokussiert: keine breite Coach-Suche, sondern Leadership-Training für Unternehmen.</p>
+          <h2 id="qualitaet-title">Professionell genug für Entscheider. Einfach genug für den ersten Schritt.</h2>
+          <p>Die Startseite ist bewusst eng geführt: keine breite Coach-Suche, kein Marktplatz-Lärm, sondern eine klare Anfrage für Führungskräfteentwicklung.</p>
         </div>
-        <div class="quality-grid">
-          <article class="quality-card reveal">
-            <span class="icon-box dark">
+        <div class="card-grid card-grid-4">
+          <article class="content-card reveal">
+            <span class="icon-box">
               <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2 4 6v6c0 5 3.4 8.2 8 10 4.6-1.8 8-5 8-10V6l-8-4Z"/></svg>
             </span>
-            <h3>Business-Fokus</h3>
-            <p>Ausgerichtet auf HR, Geschäftsführung, People & Culture und Entscheider in Unternehmen.</p>
+            <h3>B2B-Fokus</h3>
+            <p>Ausgerichtet auf Unternehmen, Führungsebenen und interne Entwicklungsziele.</p>
           </article>
-          <article class="quality-card reveal">
-            <span class="icon-box dark">
+          <article class="content-card reveal">
+            <span class="icon-box">
               <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 7h16M4 12h10M4 17h16"/></svg>
             </span>
-            <h3>Klare Vergleichbarkeit</h3>
-            <p>Trainingsbedarf, Zielgruppe und Format werden so beschrieben, dass Angebote besser vergleichbar werden.</p>
+            <h3>Klare Angaben</h3>
+            <p>Die Anfrage sammelt die Informationen, die für eine sinnvolle Einordnung wichtig sind.</p>
           </article>
-          <article class="quality-card reveal">
-            <span class="icon-box dark">
+          <article class="content-card reveal">
+            <span class="icon-box">
               <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 20V10M18 20V4M6 20v-6"/></svg>
             </span>
-            <h3>Wirksame Themen</h3>
-            <p>Leadership, Kommunikation, Konflikt, Change, Feedback und Mitarbeiterführung statt beliebiger Kategorien.</p>
+            <h3>Relevante Themen</h3>
+            <p>Leadership, Kommunikation, Change, Konflikt und Mitarbeiterführung stehen im Zentrum.</p>
           </article>
-          <article class="quality-card reveal">
-            <span class="icon-box dark">
+          <article class="content-card reveal">
+            <span class="icon-box">
               <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
             </span>
-            <h3>Schneller Einstieg</h3>
-            <p>Ein Formular, wenige präzise Angaben und ein klarer nächster Schritt.</p>
+            <h3>Direkter Einstieg</h3>
+            <p>Keine Registrierung, keine Umwege, kein unnötiger Kontaktkanal neben dem Formular.</p>
           </article>
-        </div>
-        <div class="section-cta reveal">
-          <a class="btn btn-primary" href="#anfrage">Kostenlose Anfrage senden</a>
         </div>
       </div>
     </section>
 
-    <section class="section-white" aria-labelledby="formate-title">
+    <section id="formate" class="section-soft" aria-labelledby="formate-title">
       <div class="section-inner format-layout">
         <div class="section-heading reveal">
-          <span class="eyebrow dark">Formate</span>
-          <h2 id="formate-title">Passend für Ihre Organisation.</h2>
-          <p>Ob kompakter Workshop oder mehrstufiges Leadership-Programm: Die Anfrage richtet sich nach Ziel, Zielgruppe und Rahmen.</p>
+          <span class="eyebrow">Formate</span>
+          <h2 id="formate-title">Trainingsformate für unterschiedliche Unternehmenssituationen.</h2>
+          <p>Die Anfrage ist offen genug für verschiedene Formate, aber klar genug, um den Bedarf präzise einzuordnen.</p>
         </div>
         <div class="format-list reveal">
           <a href="#anfrage">Inhouse-Training</a>
@@ -293,9 +292,9 @@
         <div class="cta-copy reveal">
           <span class="eyebrow">Kostenlose Anfrage</span>
           <h2 id="anfrage-title">Führungskräfte-Training anfragen.</h2>
-          <p>Beschreiben Sie kurz, welches Führungsthema Ihr Unternehmen bewegen soll. Ledajess bereitet den nächsten Schritt strukturiert vor.</p>
+          <p>Beschreiben Sie kurz, welches Führungsthema Ihr Unternehmen bewegen soll. Das Formular ist der einzige und zentrale Kontaktweg.</p>
         </div>
-        <form class="request-card reveal" aria-label="Führungskräfte-Training anfragen">
+        <form class="request-card reveal" aria-label="Kostenlose Anfrage für Führungskräfte-Training" novalidate>
           <div class="form-row">
             <label>
               <span>Name</span>
@@ -337,6 +336,7 @@
             <span>Ich habe die <a href="datenschutz.html">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Angaben zur Bearbeitung der Anfrage zu.</span>
           </label>
           <button class="btn btn-primary" type="submit">Kostenlose Anfrage senden</button>
+          <p class="form-message" aria-live="polite"></p>
         </form>
       </div>
     </section>
@@ -344,7 +344,7 @@
     <section id="faq" class="section-white" aria-labelledby="faq-title">
       <div class="section-inner faq-layout">
         <div class="section-heading reveal">
-          <span class="eyebrow dark">FAQ</span>
+          <span class="eyebrow">FAQ</span>
           <h2 id="faq-title">Häufige Fragen.</h2>
         </div>
         <div class="faq-list reveal">
@@ -357,10 +357,6 @@
             <p>Leadership, Management, Kommunikation, Feedback, Konfliktmanagement, Change Leadership, Mitarbeiterführung und Teamführung.</p>
           </details>
           <details>
-            <summary>Ist Ledajess auf Unternehmen fokussiert?</summary>
-            <p>Ja. Diese Startseite ist bewusst auf Unternehmen und Führungskräfte-Training ausgerichtet.</p>
-          </details>
-          <details>
             <summary>Ist die Anfrage kostenlos?</summary>
             <p>Ja. Die Anfrage ist kostenlos und unverbindlich.</p>
           </details>
@@ -371,10 +367,6 @@
           <details>
             <summary>Welche Angaben sind wichtig?</summary>
             <p>Hilfreich sind Thema, Zielgruppe, Anzahl der Teilnehmenden, Standort, gewünschtes Format und grober Zeitraum.</p>
-          </details>
-          <details>
-            <summary>Kann ich regionale Trainer anfragen?</summary>
-            <p>Ja. PLZ oder Ort helfen dabei, regionale Optionen für Ihr Führungskräfte-Training zu berücksichtigen.</p>
           </details>
           <details>
             <summary>Muss ich mich registrieren?</summary>
