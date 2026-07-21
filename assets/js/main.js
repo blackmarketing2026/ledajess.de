@@ -248,7 +248,7 @@
           const articles = category && Array.isArray(category.articles) ? category.articles : [];
 
           if (!articles.length) {
-            list.innerHTML = '<p class="empty-state">Zu dieser Kategorie sind noch keine Blogartikel veroeffentlicht. Neue Cluster-Artikel werden hier automatisch aus dem Kategorie-Datenmodell angezeigt.</p>';
+            list.innerHTML = '<p class="empty-state">Zu dieser Kategorie sind noch keine Blogartikel veröffentlicht. Neue Cluster-Artikel werden hier automatisch aus dem Kategorie-Datenmodell angezeigt.</p>';
             return;
           }
 
@@ -264,7 +264,7 @@
       })
       .catch(() => {
         lists.forEach((list) => {
-          list.innerHTML = '<p class="empty-state">Die Artikelliste ist gerade nicht verfuegbar.</p>';
+          list.innerHTML = '<p class="empty-state">Die Artikelliste ist gerade nicht verfügbar.</p>';
         });
       });
   }
