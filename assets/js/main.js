@@ -233,22 +233,22 @@
       return;
     }
 
-    fetch("/assets/data/blog-categories.json")
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error("Kategorie-Daten konnten nicht geladen werden.");
-        }
+    lists.forEach((list) => {
+      const slug = list.dataset.categoryArticles;
 
-        return response.json();
-      })
-      .then((data) => {
-        lists.forEach((list) => {
-          const slug = list.dataset.categoryArticles;
-          const category = (data.categories || []).find((item) => item.slug === slug);
-          const articles = category && Array.isArray(category.articles) ? category.articles : [];
+      fetch(`/blog/${slug}/articles.json`)
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error("Artikeldaten konnten nicht geladen werden.");
+          }
+
+          return response.json();
+        })
+        .then((data) => {
+          const articles = Array.isArray(data.articles) ? data.articles : [];
 
           if (!articles.length) {
-            list.innerHTML = '<p class="empty-state">Zu dieser Kategorie sind noch keine Blogartikel veröffentlicht. Neue Cluster-Artikel werden hier automatisch aus dem Kategorie-Datenmodell angezeigt.</p>';
+            list.innerHTML = '<p class="empty-state">Zu dieser Kategorie sind noch keine Blogartikel veröffentlicht. Neue Beiträge werden in der Ordnerstruktur blog/Kategorie/Blogartikel gespeichert und hier über die Kategorie-Übersicht angezeigt.</p>';
             return;
           }
 
@@ -260,13 +260,11 @@
               </article>
             `)
             .join("");
-        });
-      })
-      .catch(() => {
-        lists.forEach((list) => {
+        })
+        .catch(() => {
           list.innerHTML = '<p class="empty-state">Die Artikelliste ist gerade nicht verfügbar.</p>';
         });
-      });
+    });
   }
 
   document.addEventListener("DOMContentLoaded", () => {
