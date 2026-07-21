@@ -132,7 +132,7 @@
 
   <main id="main">
     <section class="hero city-hero">
-      <div class="section-inner hero-grid">
+      <div class="section-inner">
         <div class="hero-content reveal">
           <span class="eyebrow">Leadership Training im Westerwald</span>
           <h1>Führungskräfte-Training Montabaur</h1>
@@ -152,73 +152,6 @@
             </li>
           </ul>
         </div>
-
-        <form id="anfrage" class="request-card hero-request reveal" aria-labelledby="form-title">
-          <div class="form-head">
-            <span>Kostenlose Anfrage</span>
-            <h2 id="form-title">Passendes Format finden</h2>
-          </div>
-          <p class="form-intro">Beschreiben Sie kurz Ihre Ausgangssituation. Die Anfrage erfolgt ausschließlich über dieses Formular.</p>
-          <div class="form-row">
-            <label>
-              <span>Name *</span>
-              <input name="name" autocomplete="name" required>
-            </label>
-            <label>
-              <span>Unternehmen *</span>
-              <input name="company" autocomplete="organization" required>
-            </label>
-          </div>
-          <div class="form-row">
-            <label>
-              <span>Rolle / Position *</span>
-              <input name="role" required>
-            </label>
-            <label>
-              <span>Anzahl Teilnehmende</span>
-              <select name="participants">
-                <option value="">Bitte auswählen</option>
-                <option>1 Person</option>
-                <option>2-5 Personen</option>
-                <option>6-12 Personen</option>
-                <option>13-25 Personen</option>
-                <option>Mehr als 25 Personen</option>
-              </select>
-            </label>
-          </div>
-          <div class="form-row">
-            <label>
-              <span>E-Mail</span>
-              <input type="email" name="email" autocomplete="email">
-            </label>
-            <label>
-              <span>Telefon</span>
-              <input type="tel" name="phone" autocomplete="tel">
-            </label>
-          </div>
-          <label>
-            <span>Gewünschtes Format</span>
-            <select name="format">
-              <option value="">Bitte auswählen</option>
-              <option>Führungskräfteseminar Montabaur</option>
-              <option>Inhouse Führungskräftetraining</option>
-              <option>Leadership Workshop</option>
-              <option>Teamtraining Montabaur</option>
-              <option>Führungskräfte Coaching Montabaur</option>
-              <option>Tagung / Strategietag</option>
-            </select>
-          </label>
-          <label>
-            <span>Thema oder Herausforderung *</span>
-            <textarea name="message" rows="4" placeholder="Zum Beispiel Kommunikation, Konflikte, Mitarbeiter motivieren, Change Management oder neue Führungskräfte." required></textarea>
-          </label>
-          <label class="checkbox-label">
-            <input type="checkbox" required>
-            <span>Ich stimme der Verarbeitung meiner Angaben zur Bearbeitung der Anfrage zu.</span>
-          </label>
-          <button class="btn btn-primary" type="submit">Unverbindliche Anfrage senden</button>
-          <p class="form-message" role="status" aria-live="polite"></p>
-        </form>
       </div>
     </section>
 
@@ -592,6 +525,77 @@
             <p>Ja. Vor der Durchführung werden Ziele, Zielgruppe, Führungsebene, aktuelle Probleme und gewünschte Ergebnisse analysiert. Daraus entsteht ein passendes Konzept.</p>
           </details>
         </div>
+      </div>
+    </section>
+
+    <section id="anfrage" class="section-soft" aria-labelledby="form-title">
+      <div class="section-inner form-section-inner">
+        <form class="request-card reveal" aria-labelledby="form-title">
+          <div class="form-head">
+            <span>Kostenlose Anfrage</span>
+            <h2 id="form-title">Passendes Format finden</h2>
+          </div>
+          <p class="form-intro">Beschreiben Sie kurz Ihre Ausgangssituation. Die Anfrage erfolgt ausschließlich über dieses Formular.</p>
+          <div class="form-row">
+            <label>
+              <span>Name *</span>
+              <input name="name" autocomplete="name" required>
+            </label>
+            <label>
+              <span>Unternehmen *</span>
+              <input name="company" autocomplete="organization" required>
+            </label>
+          </div>
+          <div class="form-row">
+            <label>
+              <span>Rolle / Position *</span>
+              <input name="role" required>
+            </label>
+            <label>
+              <span>Anzahl Teilnehmende</span>
+              <select name="participants">
+                <option value="">Bitte auswählen</option>
+                <option>1 Person</option>
+                <option>2-5 Personen</option>
+                <option>6-12 Personen</option>
+                <option>13-25 Personen</option>
+                <option>Mehr als 25 Personen</option>
+              </select>
+            </label>
+          </div>
+          <div class="form-row">
+            <label>
+              <span>E-Mail</span>
+              <input type="email" name="email" autocomplete="email">
+            </label>
+            <label>
+              <span>Telefon</span>
+              <input type="tel" name="phone" autocomplete="tel">
+            </label>
+          </div>
+          <label>
+            <span>Gewünschtes Format</span>
+            <select name="format">
+              <option value="">Bitte auswählen</option>
+              <option>Führungskräfteseminar Montabaur</option>
+              <option>Inhouse Führungskräftetraining</option>
+              <option>Leadership Workshop</option>
+              <option>Teamtraining Montabaur</option>
+              <option>Führungskräfte Coaching Montabaur</option>
+              <option>Tagung / Strategietag</option>
+            </select>
+          </label>
+          <label>
+            <span>Thema oder Herausforderung *</span>
+            <textarea name="message" rows="4" placeholder="Zum Beispiel Kommunikation, Konflikte, Mitarbeiter motivieren, Change Management oder neue Führungskräfte." required></textarea>
+          </label>
+          <label class="checkbox-label">
+            <input type="checkbox" required>
+            <span>Ich stimme der Verarbeitung meiner Angaben zur Bearbeitung der Anfrage zu.</span>
+          </label>
+          <button class="btn btn-primary" type="submit">Unverbindliche Anfrage senden</button>
+          <p class="form-message" role="status" aria-live="polite"></p>
+        </form>
       </div>
     </section>
   </main>

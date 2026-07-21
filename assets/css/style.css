@@ -823,6 +823,10 @@ details p {
   max-width: 860px;
 }
 
+.form-section-inner {
+  max-width: 640px;
+}
+
 .form-head span {
   display: block;
   margin-bottom: 8px;
@@ -1219,10 +1223,6 @@ details p {
 
   .card-grid-4 {
     grid-template-columns: repeat(4, 1fr);
-  }
-
-  .city-hero .hero-grid {
-    grid-template-columns: minmax(0, 0.95fr) minmax(420px, 0.62fr);
   }
 
   .module-grid {
