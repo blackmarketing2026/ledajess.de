@@ -214,10 +214,10 @@
         const [label, className] = statuses[index];
         rows.push(`
           <tr>
-            <td>${formatDate(friday)} - ${formatDate(sunday)}</td>
-            <td>Wochenende</td>
-            <td>${city}</td>
-            <td><span class="status ${className}">${label}</span></td>
+            <td data-label="Termin">${formatDate(friday)} - ${formatDate(sunday)}</td>
+            <td data-label="Dauer">Wochenende</td>
+            <td data-label="Ort">${city}</td>
+            <td data-label="Status"><span class="status ${className}">${label}</span></td>
           </tr>
         `);
       }
