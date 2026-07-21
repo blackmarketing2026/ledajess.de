@@ -213,7 +213,7 @@ module.exports = async function handler(req, res) {
   const pageUrl = body.page || req.headers.referer || "";
   const pageLabel = sourcePageLabel(pageUrl);
   const source = body.source || "Kontaktformular";
-  const subject = `Neue Ledajess Anfrage von ${pageLabel} (${source})`;
+  const subject = `Neue Ledajess Anfrage (${source})`;
   const fields = pickFields({
     ...body,
     page: pageUrl,
