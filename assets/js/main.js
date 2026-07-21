@@ -64,9 +64,27 @@
     output.classList.toggle("is-success", type === "success");
   }
 
+  function getFormPayload(form) {
+    const formData = new FormData(form);
+    const payload = {};
+
+    formData.forEach((value, key) => {
+      if (payload[key]) {
+        payload[key] = `${payload[key]}, ${value}`;
+        return;
+      }
+
+      payload[key] = value;
+    });
+
+    payload.page = window.location.href;
+
+    return payload;
+  }
+
   function initForms() {
     document.querySelectorAll("form").forEach((form) => {
-      form.addEventListener("submit", (event) => {
+      form.addEventListener("submit", async (event) => {
         event.preventDefault();
 
         const fields = form.querySelectorAll("input, select, textarea");
@@ -85,19 +103,40 @@
         }
 
         const button = form.querySelector('button[type="submit"]');
+        const originalText = button ? button.textContent : "";
 
         if (button) {
-          const originalText = button.textContent;
-          button.textContent = "Anfrage vorbereitet";
+          button.textContent = "Wird gesendet...";
           button.disabled = true;
-
-          window.setTimeout(() => {
-            button.textContent = originalText;
-            button.disabled = false;
-          }, 2400);
         }
 
-        setFormMessage(form, "Danke. Ihre Anfrage ist vorbereitet.", "success");
+        setFormMessage(form, "Ihre Anfrage wird gesendet.", "");
+
+        try {
+          const response = await fetch("/api/contact", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(getFormPayload(form)),
+          });
+
+          const result = await response.json().catch(() => ({}));
+
+          if (!response.ok) {
+            throw new Error(result.error || "Die Anfrage konnte gerade nicht versendet werden.");
+          }
+
+          form.reset();
+          setFormMessage(form, "Danke. Ihre Anfrage wurde versendet.", "success");
+        } catch (error) {
+          setFormMessage(form, error.message || "Die Anfrage konnte gerade nicht versendet werden.", "error");
+        } finally {
+          if (button) {
+            button.textContent = originalText;
+            button.disabled = false;
+          }
+        }
       });
     });
   }
@@ -120,10 +159,78 @@
     });
   }
 
+  function initDynamicSeminarDates() {
+    const tableBodies = document.querySelectorAll("[data-dynamic-seminar-dates]");
+
+    if (!tableBodies.length) {
+      return;
+    }
+
+    const statuses = [
+      ["Plätze verfügbar", "status-open"],
+      ["Wenige Plätze", "status-low"],
+      ["Plätze verfügbar", "status-open"],
+      ["Fast ausgebucht", "status-full"],
+      ["Plätze verfügbar", "status-open"],
+      ["Wenige Plätze", "status-low"],
+    ];
+
+    const formatDate = (date) => {
+      const weekdays = ["So.", "Mo.", "Di.", "Mi.", "Do.", "Fr.", "Sa."];
+      const day = String(date.getDate()).padStart(2, "0");
+      const month = String(date.getMonth() + 1).padStart(2, "0");
+
+      return `${weekdays[date.getDay()]} ${day}.${month}.${date.getFullYear()}`;
+    };
+
+    const today = new Date();
+    const currentQuarter = Math.floor(today.getMonth() / 3);
+    const nextQuarter = currentQuarter + 1;
+    const year = today.getFullYear() + (nextQuarter > 3 ? 1 : 0);
+    const quarterIndex = nextQuarter % 4;
+    const quarterStart = new Date(year, quarterIndex * 3, 1);
+    const quarterEnd = new Date(year, quarterIndex * 3 + 3, 0);
+    const firstFriday = new Date(quarterStart);
+
+    while (firstFriday.getDay() !== 5) {
+      firstFriday.setDate(firstFriday.getDate() + 1);
+    }
+
+    tableBodies.forEach((tableBody) => {
+      const city = tableBody.dataset.city || "Montabaur";
+      const rows = [];
+
+      for (let index = 0; index < statuses.length; index += 1) {
+        const friday = new Date(firstFriday);
+        friday.setDate(firstFriday.getDate() + index * 14);
+
+        if (friday > quarterEnd) {
+          break;
+        }
+
+        const sunday = new Date(friday);
+        sunday.setDate(friday.getDate() + 2);
+
+        const [label, className] = statuses[index];
+        rows.push(`
+          <tr>
+            <td>${formatDate(friday)} - ${formatDate(sunday)}</td>
+            <td>Wochenende</td>
+            <td>${city}</td>
+            <td><span class="status ${className}">${label}</span></td>
+          </tr>
+        `);
+      }
+
+      tableBody.innerHTML = rows.join("");
+    });
+  }
+
   document.addEventListener("DOMContentLoaded", () => {
     initMenu();
     initReveal();
     initForms();
     initFaq();
+    initDynamicSeminarDates();
   });
 })();
