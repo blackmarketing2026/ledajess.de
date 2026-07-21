@@ -226,11 +226,55 @@
     });
   }
 
+  function initCategoryArticles() {
+    const lists = document.querySelectorAll("[data-category-articles]");
+
+    if (!lists.length) {
+      return;
+    }
+
+    fetch("/assets/data/blog-categories.json")
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Kategorie-Daten konnten nicht geladen werden.");
+        }
+
+        return response.json();
+      })
+      .then((data) => {
+        lists.forEach((list) => {
+          const slug = list.dataset.categoryArticles;
+          const category = (data.categories || []).find((item) => item.slug === slug);
+          const articles = category && Array.isArray(category.articles) ? category.articles : [];
+
+          if (!articles.length) {
+            list.innerHTML = '<p class="empty-state">Zu dieser Kategorie sind noch keine Blogartikel veroeffentlicht. Neue Cluster-Artikel werden hier automatisch aus dem Kategorie-Datenmodell angezeigt.</p>';
+            return;
+          }
+
+          list.innerHTML = articles
+            .map((article) => `
+              <article class="article-link-card">
+                <h3><a href="${article.url}">${article.title}</a></h3>
+                ${article.description ? `<p>${article.description}</p>` : ""}
+              </article>
+            `)
+            .join("");
+        });
+      })
+      .catch(() => {
+        lists.forEach((list) => {
+          list.innerHTML = '<p class="empty-state">Die Artikelliste ist gerade nicht verfuegbar.</p>';
+        });
+      });
+  }
+
   document.addEventListener("DOMContentLoaded", () => {
     initMenu();
     initReveal();
     initForms();
     initFaq();
     initDynamicSeminarDates();
+    initCategoryArticles();
   });
 })();
