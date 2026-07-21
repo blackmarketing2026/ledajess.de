@@ -717,26 +717,26 @@ details p {
   margin-bottom: 0;
 }
 
-.pillar-layout {
+.topic-layout {
   display: grid;
   gap: 24px;
 }
 
-.pillar-topic {
+.topic-section {
   max-width: 980px;
   border-bottom: 1px solid var(--color-border);
   padding-bottom: 24px;
 }
 
-.pillar-topic h3 {
+.topic-section h3 {
   font-size: 24px;
 }
 
-.pillar-topic p:last-child {
+.topic-section p:last-child {
   margin-bottom: 0;
 }
 
-.pillar-topic a,
+.topic-section a,
 .section-heading a {
   color: var(--color-primary);
   font-weight: 800;
